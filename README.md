@@ -14,4 +14,4 @@ This project uses CMake. To compile, first make a `build` dir, go there, and the
       -DALLEGRO_LIBRARY="/allegro-4.2.2-xc/lib/djgpp/liballeg.a" \
       ..
 
-Note: replace `/allegro-4.2.2-xc` with the path to your [DJGPP Allegro 4](https://github.com/msikma/allegro-4.2.2-xc) build.
+Note: replace `/allegro-4.2.2-xc` with the path to your [DJGPP Allegro 4](https://github.com/msikma/allegro-4.2.2-xc) build. You will need to have `$DJGPP_CC` and `$DJGPP_RANLIB` set to your DJGPP binaries, e.g. `/usr/local/djgpp/bin/i586-pc-msdosdjgpp-gcc`. I suggest using [Andrew Wu's build](https://github.com/andrewwutw/build-djgpp).
