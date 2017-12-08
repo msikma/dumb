@@ -191,6 +191,7 @@ set_target_properties(dumb PROPERTIES SOVERSION ${DUMB_VERSION_MAJOR})
 
 if(BUILD_ALLEGRO4)
     add_library(aldmb ${ALLEGRO_SOURCES})
+    include_directories(${ALLEGRO_INCLUDE_DIR})
     set_target_properties(aldmb PROPERTIES DEBUG_POSTFIX d)
     set_target_properties(aldmb PROPERTIES VERSION ${DUMB_VERSION})
     set_target_properties(aldmb PROPERTIES SOVERSION ${DUMB_VERSION_MAJOR})
